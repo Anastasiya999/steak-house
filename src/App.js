@@ -3,8 +3,15 @@ import AdContainer from "./components/AdContainer";
 import Header from "./components/Header";
 import LogoBar from "./components/LogoBar";
 import Slider from "./components/Slider";
-import Menu from "./components/Menu";
 import NavBar from "./components/NavBar";
+
+const logos = [
+  "/assets/Bitmap.png",
+  "/assets/Bitmap-2.png",
+  "/assets/Bitmap-3.png",
+  "/assets/Bitmap-4.png",
+  "/assets/e.png",
+];
 
 function App() {
   return (
@@ -12,7 +19,7 @@ function App() {
       <Header>
         <NavBar />
         <Slider />
-        <LogoBar />
+        <LogoBar logos={logos} />
         <AdContainer />
       </Header>
     </div>

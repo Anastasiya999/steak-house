@@ -1,0 +1,9 @@
+.root {
+  overflow: auto;
+  padding-inline: 25%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+}

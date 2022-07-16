@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "../Menu";
+import IconButton from "./IconButton";
 
 import styles from "./NavBar.module.scss";
 
@@ -18,23 +19,20 @@ export default function NavBar() {
           onClick={toggleMenu}
           className={styles.navMenu}
         />
-        <img src="/assets/l.png" className={styles.navLogo} />
+        <img
+          src="/assets/l.png"
+          srcset="/assets/l@2x.png 2x"
+          alt="steak house logo"
+          className={styles.navLogo}
+        />
         <Menu isMenuOpen={isMenuOpen} onClick={toggleMenu} />
       </div>
 
       <div className={styles.navRight}>
-        <div className={styles.navRightItem}>
-          <img src="/assets/mojekonto.svg" />
-          <span>Moje konto</span>
-        </div>
-        <div className={styles.navRightItem}>
-          <img src="/assets/koszyk.svg" />
-          <span>Koszyk</span>
-        </div>
-
+        <IconButton title="Moje konto" src="/assets/mojekonto.svg" />
+        <IconButton title="Koszyk" src="/assets/koszyk.svg" />
         <button>
-          <img src="/assets/zamow_ikona.svg" />
-          <span>Zamów</span>
+          <IconButton title="Zamów" src="/assets/zamow_ikona.svg" />
         </button>
       </div>
     </nav>

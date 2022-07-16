@@ -1,46 +1,26 @@
 .nav {
   font-size: 14px;
 
-  padding: 1.5em;
+  padding: 1.5em 1em;
 
   display: flex;
   justify-content: space-between;
   max-width: max(calc(100vw - 300px), 700px);
   margin: 0 auto;
-
-  &Logo {
-    max-height: 2em;
-  }
+  overflow-x: hidden;
 
   &Left,
   &Right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(1rem, 0.5rem + 2vw, 4rem);
   }
 
   &Right {
-    &Item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3em;
-
-      img {
-        height: 15px;
-      }
-    }
-
     button {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0.3em;
-
       background-color: rgba(146, 3, 3, 1);
 
-      padding: 0.8em 1.7em;
+      padding: 0.8em 1.4em;
 
       font-family: inherit;
       color: white;
@@ -58,5 +38,18 @@
     @media (min-width: 1400px) {
       display: none;
     }
+  }
+}
+
+/*-----------------IconButton-----------------*/
+
+.iconBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+
+  img {
+    height: 15px;
   }
 }

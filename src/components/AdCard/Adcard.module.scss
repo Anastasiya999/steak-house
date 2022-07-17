@@ -3,11 +3,12 @@
   width: max(45vw, 350px);
 
   padding: 3em min(6em, 6vw);
+  padding-right: 25vw;
 
   background-size: cover;
   color: white;
 
-  /*div:first-child {
-    width: max(45%, 250px);
-  }*/
+  @media (max-width: 1400px) {
+    padding-right: 15vw;
+  }
 }

@@ -3,12 +3,11 @@ import ActionButton from "../ActionButton";
 
 import styles from "./Ad.module.scss";
 
-export default function Ad({ children, mode, accent }) {
+export default function Ad({ children, accent }) {
   return (
     <div
       className={[
         styles.root,
-        mode == "dark" ? styles.dark : styles.light,
         accent == "red" ? styles.highlightRed : styles.highlightBlack,
       ].join(" ")}
     >

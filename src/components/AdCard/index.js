@@ -1,8 +1,6 @@
 import React from "react";
-import ActionButton from "../ActionButton";
-import Ad from "../Ad";
 
-import styles from "./Ad.module.scss";
+import styles from "./Adcard.module.scss";
 
 export default function AdCard({ imgURL, children }) {
   return (
@@ -12,7 +10,7 @@ export default function AdCard({ imgURL, children }) {
         backgroundImage: `url(${imgURL})`,
       }}
     >
-      <Ad> {children}</Ad>
+      {children}
     </div>
   );
 }

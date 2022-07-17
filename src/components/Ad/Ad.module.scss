@@ -8,3 +8,16 @@
     margin-right: 0.5em;
   }
 }
+
+.highlightRed {
+  span {
+    background-color: red;
+  }
+}
+
+.highlightBlack {
+  span {
+    background-color: black;
+    color: white;
+  }
+}

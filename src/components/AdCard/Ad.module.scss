@@ -1,34 +1,13 @@
 .card {
-  height: 300px;
+  min-height: 300px;
   width: max(45vw, 350px);
 
-  background-size: cover;
+  padding: 3em min(6em, 6vw);
 
+  background-size: cover;
   color: white;
 
-  &Content {
-    width: max(60%, 250px);
-    height: 100%;
-    padding: 3% 12%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    img {
-      margin-right: 0.5em;
-    }
-  }
-}
-
-.dark {
-  span {
-    background-color: black;
-  }
-}
-
-.bright {
-  span {
-    background-color: red;
+  div:first-child {
+    width: max(45%, 250px);
   }
 }

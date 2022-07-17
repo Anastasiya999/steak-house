@@ -6,17 +6,15 @@ import styles from "./AdContainer.module.scss";
 export default function AdContainer() {
   return (
     <div className={styles.root}>
-      <AdCard
-        title="Zestaw dla 3 osób"
-        imgURL="/assets/dana-devolk-x2cNcfz_xXU-unsplash.png"
-        darkSpan
-      >
+      <AdCard imgURL="/assets/dana-devolk-x2cNcfz_xXU-unsplash.png" darkSpan>
+        <h1>Zestaw dla 3 osób</h1>
         <p>
           Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
           <span> 39zł </span>
         </p>
       </AdCard>
-      <AdCard title="UberEats" imgURL="/assets/aplikacja.png">
+      <AdCard imgURL="/assets/aplikacja.png">
+        <h1>UberEats</h1>
         <p>
           Zamawiaj w aplikacji <span> 10% </span> taniej. Pobierz aplikację
           UberEats już dziś.

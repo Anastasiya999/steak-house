@@ -1,5 +1,9 @@
 .root {
+  background-color: white;
+
   position: relative;
+  z-index: 3000;
+
   display: block;
   ul {
     display: flex;

@@ -1,9 +1,10 @@
 import React from "react";
 import ActionButton from "../ActionButton";
+import Ad from "../Ad";
 
 import styles from "./Ad.module.scss";
 
-export default function AdCard({ title, imgURL, darkSpan, children }) {
+export default function AdCard({ imgURL, children }) {
   return (
     <div
       className={styles.card}
@@ -11,16 +12,7 @@ export default function AdCard({ title, imgURL, darkSpan, children }) {
         backgroundImage: `url(${imgURL})`,
       }}
     >
-      <div
-        className={[
-          styles.cardContent,
-          darkSpan ? styles.dark : styles.bright,
-        ].join(" ")}
-      >
-        <h1>{title}</h1>
-        {children}
-        <ActionButton>Zamów online</ActionButton>
-      </div>
+      <Ad> {children}</Ad>
     </div>
   );
 }

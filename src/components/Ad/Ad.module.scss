@@ -34,13 +34,13 @@
 
 .highlightRed {
   span {
-    background-color: red;
+    background-color: $color-primary;
   }
 }
 
 .highlightBlack {
   span {
-    background-color: black;
-    color: white;
+    background-color: $color-dark;
+    color: $color-light;
   }
 }

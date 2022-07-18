@@ -12,7 +12,6 @@
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
-  //gap: clamp(5rem, 15vw, 500px);
 
   &Adwrapper {
     height: auto;
@@ -43,8 +42,6 @@
 }
 
 .swiper-pagination-bullet {
-  //padding: 5px 5px;
-
   aspect-ratio: 1;
 
   opacity: 1;

@@ -1,6 +1,6 @@
 @import "../../style/variables";
 .root {
-  background-color: white;
+  background-color: $color-light;
 
   position: relative;
   z-index: 3000;
@@ -30,7 +30,6 @@
   justify-content: center;
   align-items: center;
 
-  background-color: white;
   opacity: 1;
 
   ul {

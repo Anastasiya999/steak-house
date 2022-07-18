@@ -1,3 +1,4 @@
+@import "../../style/variables";
 .nav {
   font-size: 14px;
 
@@ -18,12 +19,12 @@
 
   &Right {
     button {
-      background-color: rgba(146, 3, 3, 1);
+      background-color: $color-primary;
 
       padding: 0.8em 1.4em;
 
       font-family: inherit;
-      color: white;
+      color: $color-light;
 
       border-radius: 10px;
 

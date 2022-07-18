@@ -1,13 +1,13 @@
 @import "../../style/variables";
 .root {
-  background-color: rgba(146, 3, 3, 1);
+  background-color: $color-primary;
 
   padding: 0.8em 2.5em;
   max-width: fit-content;
 
   font-family: inherit;
   font-weight: $fw-black;
-  color: white;
+  color: $color-light;
 
   border-radius: 10px;
 

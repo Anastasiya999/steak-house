@@ -9,7 +9,7 @@ export default function AdContainer() {
     <div className={styles.root}>
       <AdCard imgURL="/assets/dana-devolk-x2cNcfz_xXU-unsplash.png">
         <Ad>
-          <h1>Zestaw dla 3 osób</h1>
+          <h2>Zestaw dla 3 osób</h2>
           <p>
             Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
             <span> 39zł </span>
@@ -18,7 +18,7 @@ export default function AdContainer() {
       </AdCard>
       <AdCard imgURL="/assets/aplikacja.png">
         <Ad accent="red">
-          <h1>UberEats</h1>
+          <h2>UberEats</h2>
           <p>
             Zamawiaj w aplikacji <span> 10% </span> taniej. Pobierz aplikację
             UberEats już dziś.

@@ -1,3 +1,4 @@
+@import "../../style/variables";
 .root {
   background-color: white;
 
@@ -8,6 +9,10 @@
   ul {
     display: flex;
     gap: 2rem;
+
+    li {
+      line-height: $line-height2;
+    }
   }
 
   @media (max-width: 1260px) {

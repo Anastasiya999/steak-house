@@ -5,9 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Pagination, Autoplay, EffectFade } from "swiper";
 
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
+import "swiper/scss";
+import "swiper/scss/effect-fade";
+import "swiper/scss/pagination";
+
 import "./styles.scss";
 
 export default function Slider() {
@@ -21,11 +22,15 @@ export default function Slider() {
         }}
         pagination={{
           clickable: true,
+
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + "</span>";
+          },
         }}
         rewind
+        autoHeight={true}
         effect={"fade"}
         modules={[Pagination, Autoplay, EffectFade]}
-        className="mySwiper"
       >
         <SwiperSlide>
           <div className="swiper-slideAdwrapper">
@@ -33,7 +38,7 @@ export default function Slider() {
               <h1>
                 <span>Rabat 10%</span> na pierwsze zamówienie!
               </h1>
-              <p>
+              <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
                 <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
                 końca lutego.
@@ -55,7 +60,7 @@ export default function Slider() {
               <h1>
                 <span>Rabat 10%</span> na pierwsze zamówienie!
               </h1>
-              <p>
+              <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
                 <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
                 końca lutego.
@@ -76,7 +81,7 @@ export default function Slider() {
               <h1>
                 <span>Rabat 10%</span> na pierwsze zamówienie!
               </h1>
-              <p>
+              <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
                 <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
                 końca lutego.

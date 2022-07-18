@@ -1,11 +1,34 @@
+@import "../../style/variables";
 .root {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  gap: 1rem;
 
   img {
     margin-right: 0.5em;
+  }
+
+  p {
+    line-height: $line-height2;
+    font-size: $fs-500;
+    font-family: $ff-sans-secondary;
+    font-weight: $fw-light;
+  }
+
+  p[role="banner"] {
+    max-width: max(70%, 280px);
+  }
+
+  h1 {
+    font-size: $fs-700;
+    line-height: $line-height3;
+    font-weight: $fw-bold;
+  }
+
+  h2 {
+    font-size: $fs-600;
+    font-weight: $fw-bold;
   }
 }
 

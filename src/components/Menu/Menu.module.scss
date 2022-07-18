@@ -12,6 +12,22 @@
 
     li {
       line-height: $line-height2;
+
+      a {
+        border-bottom: 2px solid $color-light;
+        transition: all 0.3s ease;
+        &:hover {
+          padding: 0 0 4px 0;
+          border-color: $color-primary;
+        }
+
+        &:active {
+          border-bottom: 10px solid $color-primary;
+        }
+      }
+      .selected {
+        border-bottom: 2px solid $color-primary;
+      }
     }
   }
 
@@ -45,6 +61,8 @@
 
     top: 0px;
     right: 0px;
+
+    cursor: pointer;
   }
   transition: all 0.5s ease-in-out;
 }

@@ -1,7 +1,17 @@
 import React from "react";
 import styles from "./Menu.module.scss";
 
+const menu = [
+  "Steaks",
+  "Burgers",
+  "French fries",
+  "Drinks",
+  "Gdzie dowozimy?",
+  "Kontakt",
+];
+
 export default function Menu({ isMenuOpen, onClick }) {
+  const [isActive, setActive] = React.useState(-1);
   return (
     <div className={[styles.root, isMenuOpen && styles.mobile].join(" ")}>
       {isMenuOpen && (
@@ -12,12 +22,17 @@ export default function Menu({ isMenuOpen, onClick }) {
         />
       )}
       <ul>
-        <li>Steaks</li>
-        <li>Burgers</li>
-        <li>French fries</li>
-        <li>Drinks</li>
-        <li>Gdzie dowozimy?</li>
-        <li>Kontakt</li>
+        {menu.map((item, idx) => (
+          <li key={idx}>
+            <a
+              href="#"
+              className={isActive == idx ? styles.selected : ""}
+              onClick={() => setActive(idx)}
+            >
+              {item}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -12,12 +12,12 @@
   p {
     line-height: $line-height2;
     font-size: $fs-500;
-    font-family: $ff-sans-secondary;
     font-weight: $fw-light;
   }
 
   p[role="banner"] {
     max-width: max(70%, 280px);
+    font-family: $ff-sans-secondary;
   }
 
   h1 {

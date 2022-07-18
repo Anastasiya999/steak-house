@@ -40,8 +40,8 @@ export default function Slider() {
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
-                <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
-                końca lutego.
+                <strong> promocji -10%</strong>. Spiesz się, czas trwania
+                promocji do końca lutego.
               </p>
             </Ad>
           </div>
@@ -62,8 +62,8 @@ export default function Slider() {
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
-                <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
-                końca lutego.
+                <strong> promocji -10%</strong>. Spiesz się, czas trwania
+                promocji do końca lutego.
               </p>
             </Ad>
           </div>
@@ -83,8 +83,8 @@ export default function Slider() {
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
-                <b> promocji -10%</b>. Spiesz się, czas trwania promocji do
-                końca lutego.
+                <strong> promocji -10%</strong>. Spiesz się, czas trwania
+                promocji do końca lutego.
               </p>
             </Ad>
           </div>

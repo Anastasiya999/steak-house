@@ -13,29 +13,31 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={styles.nav}>
-      <div className={styles.navLeft}>
-        <img
-          src="/assets/menu.svg"
-          onClick={toggleMenu}
-          className={styles.navMenu}
-        />
-        <img
-          src="/assets/l.png"
-          srcSet="/assets/l@2x.png 2x"
-          alt="steak house logo"
-          className={styles.navLogo}
-        />
-        <Menu isMenuOpen={isMenuOpen} onClick={toggleMenu} />
-      </div>
+    <div className={styles.navWrapper}>
+      <nav className={styles.nav}>
+        <div className={styles.navLeft}>
+          <img
+            src="/assets/menu.svg"
+            onClick={toggleMenu}
+            className={styles.navMenu}
+          />
+          <img
+            src="/assets/l.png"
+            srcSet="/assets/l@2x.png 2x"
+            alt="steak house logo"
+            className={styles.navLogo}
+          />
+          <Menu isMenuOpen={isMenuOpen} onClick={toggleMenu} />
+        </div>
 
-      <div className={styles.navRight}>
-        <IconButton title="Moje konto" src="/assets/mojekonto.svg" />
-        <IconButton title="Koszyk" src="/assets/koszyk.svg" />
-        <ActionButton>
-          <IconButton title="Zamów" src="/assets/zamow_ikona.svg" />
-        </ActionButton>
-      </div>
-    </nav>
+        <div className={styles.navRight}>
+          <IconButton title="Moje konto" src="/assets/mojekonto.svg" />
+          <IconButton title="Koszyk" src="/assets/koszyk.svg" />
+          <ActionButton>
+            <IconButton title="Zamów" src="/assets/zamow_ikona.svg" />
+          </ActionButton>
+        </div>
+      </nav>
+    </div>
   );
 }

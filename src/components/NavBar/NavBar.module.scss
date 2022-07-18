@@ -1,15 +1,26 @@
 @import "../../style/variables";
 @import "../../style/mixins";
+
+.navWrapper {
+  position: sticky;
+  box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.0520088);
+  -webkit-box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.0520088);
+  -moz-box-shadow: 0px 1px 21px rgba(0, 0, 0, 0.0520088);
+
+  background-color: $color-light;
+  z-index: $z-index2;
+}
+
 .nav {
   font-size: $fs-300;
 
   padding: 1em 0.8em;
-
-  display: flex;
-  justify-content: space-between;
   max-width: max(calc(100vw - 300px), 700px);
   margin: 0 auto;
   overflow-x: hidden;
+
+  display: flex;
+  justify-content: space-between;
 
   &Left,
   &Right {

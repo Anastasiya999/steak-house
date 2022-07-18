@@ -1,8 +1,8 @@
 import React from "react";
 
 import Ad from "../Ad";
-import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper";
 
 import "swiper/scss";
@@ -49,7 +49,7 @@ export default function Slider() {
           <div
             role="image"
             style={{
-              backgroundImage: `url(${"/assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png"})`,
+              backgroundImage: `-webkit-image-set( url(${"/assets/dana-devolk-x2cNcfz_xXU-unsplash.png"}) 1x, url(${"/assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png"}) 2x )`,
               backgroundSize: "cover",
             }}
           />
@@ -58,11 +58,11 @@ export default function Slider() {
           <div className="swiper-slideAdwrapper">
             <Ad>
               <h1>
-                <span>Rabat 100%</span> na każde 10 zamówienie!
+                <span>Rabat 80%</span> na każde 10 zamówienie!
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
-                <strong> promocji -10%</strong>. Spiesz się, czas trwania
+                <strong> promocji -80%</strong>. Spiesz się, czas trwania
                 promocji do końca lutego.
               </p>
             </Ad>
@@ -70,7 +70,8 @@ export default function Slider() {
           <div
             role="image"
             style={{
-              backgroundImage: `url(${"/assets/Bitmapv.png"})`,
+              backgroundImage: `-webkit-image-set( url(${"/assets/Bitmapv.png"}) 1x, url(${"/assets/Bitmapv@2x.png"}) 2x )`,
+
               backgroundSize: "cover",
             }}
           />
@@ -91,7 +92,7 @@ export default function Slider() {
           <div
             role="image"
             style={{
-              backgroundImage: `url(${"/assets/Bitmapv.png"})`,
+              backgroundImage: `-webkit-image-set( url(${"/assets/Bitmapv.png"}) 1x, url(${"/assets/Bitmapv@2x.png"}) 2x )`,
               backgroundSize: "cover",
             }}
           />

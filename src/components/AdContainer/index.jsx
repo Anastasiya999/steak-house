@@ -7,7 +7,12 @@ import styles from "./AdContainer.module.scss";
 export default function AdContainer() {
   return (
     <div className={styles.root}>
-      <AdCard imgURL="/assets/dana-devolk-x2cNcfz_xXU-unsplash.png">
+      <AdCard
+        imgURL={[
+          "/assets/dana-devolk-x2cNcfz_xXU-unsplash.png",
+          "/assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png",
+        ]}
+      >
         <Ad>
           <h2>Zestaw dla 3 osób</h2>
           <p>
@@ -16,7 +21,7 @@ export default function AdContainer() {
           </p>
         </Ad>
       </AdCard>
-      <AdCard imgURL="/assets/aplikacja.png">
+      <AdCard imgURL={["/assets/aplikacja.png", "/assets/aplikacja@2x.png"]}>
         <Ad accent="red">
           <h2>UberEats</h2>
           <p>

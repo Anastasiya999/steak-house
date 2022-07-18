@@ -1,0 +1,15 @@
+@mixin owlLeft($gap, $margin: "left") {
+  @supports not (gap: $gap) {
+    & > * + * {
+      margin-left: $gap;
+    }
+  }
+}
+
+@mixin owlTop($gap) {
+  @supports not (gap: $gap) {
+    & > * + * {
+      margin-top: $gap;
+    }
+  }
+}

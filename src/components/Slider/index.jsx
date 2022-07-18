@@ -58,7 +58,7 @@ export default function Slider() {
           <div className="swiper-slideAdwrapper">
             <Ad>
               <h1>
-                <span>Rabat 10%</span> na pierwsze zamówienie!
+                <span>Rabat 100%</span> na każde 10 zamówienie!
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
@@ -79,11 +79,11 @@ export default function Slider() {
           <div className="swiper-slideAdwrapper">
             <Ad>
               <h1>
-                <span>Rabat 10%</span> na pierwsze zamówienie!
+                <span>Rabat 50%</span> na drugie zamówienie!
               </h1>
               <p role="banner">
                 Do 20 stycznia złóż zamówienie na stronie i skorzystaj z
-                <strong> promocji -10%</strong>. Spiesz się, czas trwania
+                <strong> promocji -50%</strong>. Spiesz się, czas trwania
                 promocji do końca lutego.
               </p>
             </Ad>

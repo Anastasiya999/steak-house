@@ -1,3 +1,4 @@
+@import "../../style/mixins";
 .root {
   position: relative;
   width: 950px;
@@ -10,6 +11,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 8vw;
+  @include owlLeft(8vw);
 
   position: absolute;
   @media (max-width: 1224px) {
@@ -21,6 +23,7 @@
   position: relative;
   height: 5rem;
   width: 100%;
+
   overflow: hidden;
 
   display: flex;

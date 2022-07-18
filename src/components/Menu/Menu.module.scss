@@ -1,4 +1,5 @@
 @import "../../style/variables";
+@import "../../style/mixins";
 .root {
   background-color: $color-light;
 
@@ -9,6 +10,7 @@
   ul {
     display: flex;
     gap: 2rem;
+    @include owlLeft(2rem);
 
     li {
       line-height: $line-height2;
@@ -34,6 +36,11 @@
   @media (max-width: 1260px) {
     position: fixed;
     left: -900px;
+
+    ul {
+      @include owlTop(2rem);
+      margin-left: 0;
+    }
   }
 }
 

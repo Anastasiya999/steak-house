@@ -24,9 +24,18 @@ export default function AdContainer() {
             UberEats już dziś.
           </p>
           <div>
-            <img src="/assets/App_Store_(iOS).svg" />
-            <img src="/assets/Group 4.svg" />
-            <img src="/assets/huawei-app-badge-9757fa 2.svg" />
+            <a href="#">
+              <img role="shop-link" src="/assets/App_Store_(iOS).svg" />
+            </a>
+            <a href="#">
+              <img role="shop-link" src="/assets/Group 4.svg" />
+            </a>
+            <a href="#">
+              <img
+                role="shop-link"
+                src="/assets/huawei-app-badge-9757fa 2.svg"
+              />
+            </a>
           </div>
         </Ad>
       </AdCard>

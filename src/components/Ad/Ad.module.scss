@@ -1,12 +1,15 @@
 @import "../../style/variables";
+@import "../../style/mixins";
 .root {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+  @include owlTop(1rem);
 
-  img {
+  img[role="shop-link"] {
     margin-right: 0.5em;
+    cursor: pointer;
   }
 
   p {
